@@ -143,11 +143,11 @@
 //
 //
 // 2. 표현의 선택
-def map2[A,B,C](a: Par[A], b: Par[B])(f: (A,B) => C): Par[C]
-def fork[A](a: => Par[A]): Par[A]
-def unit[A](a: A): Par[A]
-def lazyUnit[A](a: => A): Par[A] = fork(unit(a))
-def run[A](a: Par[A]): A
+//def map2[A,B,C](a: Par[A], b: Par[B])(f: (A,B) => C): Par[C]
+//def fork[A](a: => Par[A]): Par[A]
+//def unit[A](a: A): Par[A]
+//def lazyUnit[A](a: => A): Par[A] = fork(unit(a))
+//def run[A](a: Par[A]): A
 //
 // unit은 상수 값을 병렬 계산으로 승격
 // map2는 두 병렬 계산의 결과들을 이항 함수로 조합
